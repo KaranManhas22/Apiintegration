@@ -12,7 +12,7 @@ class recycler_Adapter(
     private var recyclerBtn: Recycler_btn
 ) : RecyclerView.Adapter<recycler_Adapter.ViewHolder>() {
     class ViewHolder(var view: View) : RecyclerView.ViewHolder(view) {
-        val email: TextView = view.findViewById(R.id.etEmail)
+
         val Fname: TextView = view.findViewById(R.id.etFirst_name)
         val Lname: TextView = view.findViewById(R.id.etLast_name)
         val btn_del: Button = view.findViewById(R.id.btn_Delete)
@@ -33,7 +33,7 @@ class recycler_Adapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentItem = array[position]
-        holder.email.setText(currentItem.emailRM)
+
         holder.Fname.setText(currentItem.first_name)
         holder.Lname.setText(currentItem.last_name)
 
